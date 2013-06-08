@@ -1,0 +1,5 @@
+--Output from save and retrieve Review with all associations present--
+--Output from update Review with all associations present--
+--Output from delete Review with all associations present--
+--Output from one-to-many from Review to RentalUnit ensured--
+--Output from getImgUrl method overloaded test--

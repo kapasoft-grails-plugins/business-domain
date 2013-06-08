@@ -1,0 +1,82 @@
+Testsuite: com.minnehahalofts.app.ContactUsIntegrationSpec
+Tests run: 5, Failures: 0, Errors: 5, Time elapsed: 0.334 sec
+------------- Standard Output ---------------
+--Output from validated setupContactUs() method--
+--Output from save and retrieve ContactUs with all associations present--
+--Output from update ContactUs with all associations present--
+--Output from delete ContactUs with all associations present--
+--Output from ensure no cascading on company--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from validated setupContactUs() method--
+--Output from save and retrieve ContactUs with all associations present--
+--Output from update ContactUs with all associations present--
+--Output from delete ContactUs with all associations present--
+--Output from ensure no cascading on company--
+------------- ---------------- ---------------
+
+Testcase: validated setupContactUs() method took 0.011 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.validated setupContactUs() method(ContactUsIntegrationSpec.groovy:9)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: save and retrieve ContactUs with all associations present took 0.011 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@4695220b
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@4695220b
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.save and retrieve ContactUs with all associations present(ContactUsIntegrationSpec.groovy:19)
+Caused by: java.lang.IllegalArgumentException: java.lang.ClassCastException@4695220b
+
+Testcase: update ContactUs with all associations present took 0.009 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@423682d2
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@423682d2
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.update ContactUs with all associations present(ContactUsIntegrationSpec.groovy:31)
+Caused by: java.lang.IllegalArgumentException: java.lang.ClassCastException@423682d2
+
+Testcase: delete ContactUs with all associations present took 0.009 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@1beba91b
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@1beba91b
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.delete ContactUs with all associations present(ContactUsIntegrationSpec.groovy:43)
+Caused by: java.lang.IllegalArgumentException: java.lang.ClassCastException@1beba91b
+
+Testcase: ensure no cascading on company took 0.009 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@5b7c48f2
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@5b7c48f2
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.ensure no cascading on company(ContactUsIntegrationSpec.groovy:57)
+Caused by: java.lang.IllegalArgumentException: java.lang.ClassCastException@5b7c48f2
+

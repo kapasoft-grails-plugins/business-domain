@@ -1,0 +1,45 @@
+<plugin name='business-domain' version='0.1-SNAPSHOT' grailsVersion='2.1 &gt; *'>
+  <author>Your name</author>
+  <title>Business Domain Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/business-domain</documentation>
+  <type>BusinessDomainGrailsPlugin</type>
+  <resources>
+    <resource>TestDataConfig</resource>
+    <resource>temp-BuildConfig</resource>
+    <resource>com.minnehahalofts.app.Address</resource>
+    <resource>com.minnehahalofts.app.Company</resource>
+    <resource>com.minnehahalofts.app.ContactUs</resource>
+    <resource>com.minnehahalofts.app.Inquiry</resource>
+    <resource>com.minnehahalofts.app.RentalUnit</resource>
+    <resource>com.minnehahalofts.app.Review</resource>
+    <resource>com.minnehahalofts.app.Role</resource>
+    <resource>com.minnehahalofts.app.User</resource>
+    <resource>com.minnehahalofts.app.UserRole</resource>
+    <resource>com.minnehahalofts.app.TimeService</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://grails.org/plugins' url='http://grails.org/plugins' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='joda-time' name='joda-time-hibernate' version='1.3' />
+      <dependency group='joda-time' name='joda-time' version='2.1' />
+    </compile>
+  </dependencies>
+  <plugins>
+    <test>
+      <plugin group='org.grails.plugins' name='spock' version='0.7' />
+    </test>
+    <compile>
+      <plugin group='org.grails.plugins' name='hibernate' version='2.1.2' />
+      <plugin group='org.grails.plugins' name='build-test-data' version='2.0.3' />
+    </compile>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>

@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="3" failures="0" hostname="Margots-Kapacs.local" id="0" name="AddressIntegrationSpec" package="com.minnehahalofts.app" tests="5" time="0.985" timestamp="2013-06-06T14:59:17">
+      <properties />
+
+      <testcase classname="com.minnehahalofts.app.AddressIntegrationSpec" name="save and retrieve Address" time="0.494" />
+
+      <testcase classname="com.minnehahalofts.app.AddressIntegrationSpec" name="update Address" time="0.048" />
+
+      <testcase classname="com.minnehahalofts.app.AddressIntegrationSpec" name="delete Address with Associations present" time="0.275">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+	at com.minnehahalofts.app.AddressIntegrationSpec.delete Address with Associations present(AddressIntegrationSpec.groovy:39)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.AddressIntegrationSpec" name="one-to-one from RentalUnit to Address ensured" time="0.065">
+          <error message="Unable to build valid com.minnehahalofts.app.Address instance, errors: [[&#x9;grails.validation.ValidationErrors: 5 errors&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;]]" type="java.lang.Exception">java.lang.Exception: Unable to build valid com.minnehahalofts.app.Address instance, errors: [[	grails.validation.ValidationErrors: 5 errors
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:241)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure9(BuildTestDataService.groovy:64)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:236)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.AddressIntegrationSpec.one-to-one from RentalUnit to Address ensured(AddressIntegrationSpec.groovy:69)
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.AddressIntegrationSpec" name="ensure no cascading on Company" time="0.026">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.AddressIntegrationSpec.ensure no cascading on Company(AddressIntegrationSpec.groovy:90)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from save and retrieve Address--
+--Output from update Address--
+--Output from delete Address with Associations present--
+--Output from one-to-one from RentalUnit to Address ensured--
+--Output from ensure no cascading on Company--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from save and retrieve Address--
+--Output from update Address--
+--Output from delete Address with Associations present--
+--Output from one-to-one from RentalUnit to Address ensured--
+--Output from ensure no cascading on Company--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="14" failures="0" hostname="Margots-Kapacs.local" id="1" name="CompanyIntegrationSpec" package="com.minnehahalofts.app" tests="15" time="0.44" timestamp="2013-06-06T14:59:18">
+      <properties />
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="test setupCompany helper method" time="0.028">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.test setupCompany helper method(CompanyIntegrationSpec.groovy:10)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="save and retrieve RentalUnit with all associations present" time="0.026">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.save and retrieve RentalUnit with all associations present(CompanyIntegrationSpec.groovy:27)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="update Company with all associations present" time="0.026">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.update Company with all associations present(CompanyIntegrationSpec.groovy:39)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="delete Company with all associations present" time="0.035">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.delete Company with all associations present(CompanyIntegrationSpec.groovy:51)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="cascading address ensured with all associations present" time="0.037">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.cascading address ensured with all associations present(CompanyIntegrationSpec.groovy:72)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="one-to-one relationship between Company and Address" time="0.018" />
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="non-cascading featuredReview ensured with all associations present" time="0.027">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.non-cascading featuredReview ensured with all associations present(CompanyIntegrationSpec.groovy:101)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="non-cascading orphan reviews" time="0.025">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.non-cascading orphan reviews(CompanyIntegrationSpec.groovy:121)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="one-to-many unidirectional relationship between Company and Review" time="0.02">
+          <error message="Invalid property &apos;imgUrl&apos; of bean class [com.minnehahalofts.app.Review]: Getter for property &apos;imgUrl&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException" type="org.springframework.beans.InvalidPropertyException">org.springframework.beans.InvalidPropertyException: Invalid property &apos;imgUrl&apos; of bean class [com.minnehahalofts.app.Review]: Getter for property &apos;imgUrl&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:240)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.one-to-many unidirectional relationship between Company and Review(CompanyIntegrationSpec.groovy:138)
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.NullPointerException
+	at java.lang.String.contains(String.java:2076)
+	at com.minnehahalofts.app.Review.getImgUrl(Review.groovy:54)
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="ensure no-cascading on rental unit" time="0.024">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.ensure no-cascading on rental unit(CompanyIntegrationSpec.groovy:165)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="ensure no-cascading on orphan rental unit" time="0.03">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.ensure no-cascading on orphan rental unit(CompanyIntegrationSpec.groovy:179)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="one-to-many bidirectional relationship between company and rental unit ensured" time="0.022">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.one-to-many bidirectional relationship between company and rental unit ensured(CompanyIntegrationSpec.groovy:192)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="ensure cascading on Connection" time="0.026">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.ensure cascading on Connection(CompanyIntegrationSpec.groovy:215)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="ensure cascading on orphan ContactUs" time="0.025">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.ensure cascading on orphan ContactUs(CompanyIntegrationSpec.groovy:229)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.CompanyIntegrationSpec" name="one-to-many bidirectional relationship between rental unit and ContactUs ensured" time="0.023">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.one-to-many bidirectional relationship between rental unit and ContactUs ensured(CompanyIntegrationSpec.groovy:243)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from test setupCompany helper method--
+--Output from save and retrieve RentalUnit with all associations present--
+--Output from update Company with all associations present--
+--Output from delete Company with all associations present--
+--Output from cascading address ensured with all associations present--
+--Output from one-to-one relationship between Company and Address--
+--Output from non-cascading featuredReview ensured with all associations present--
+--Output from non-cascading orphan reviews--
+--Output from one-to-many unidirectional relationship between Company and Review--
+--Output from ensure no-cascading on rental unit--
+--Output from ensure no-cascading on orphan rental unit--
+--Output from one-to-many bidirectional relationship between company and rental unit ensured--
+--Output from ensure cascading on Connection--
+--Output from ensure cascading on orphan ContactUs--
+--Output from one-to-many bidirectional relationship between rental unit and ContactUs ensured--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test setupCompany helper method--
+--Output from save and retrieve RentalUnit with all associations present--
+--Output from update Company with all associations present--
+--Output from delete Company with all associations present--
+--Output from cascading address ensured with all associations present--
+--Output from one-to-one relationship between Company and Address--
+--Output from non-cascading featuredReview ensured with all associations present--
+--Output from non-cascading orphan reviews--
+--Output from one-to-many unidirectional relationship between Company and Review--
+--Output from ensure no-cascading on rental unit--
+--Output from ensure no-cascading on orphan rental unit--
+--Output from one-to-many bidirectional relationship between company and rental unit ensured--
+--Output from ensure cascading on Connection--
+--Output from ensure cascading on orphan ContactUs--
+--Output from one-to-many bidirectional relationship between rental unit and ContactUs ensured--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="5" failures="0" hostname="Margots-Kapacs.local" id="2" name="ContactUsIntegrationSpec" package="com.minnehahalofts.app" tests="5" time="0.334" timestamp="2013-06-06T14:59:18">
+      <properties />
+
+      <testcase classname="com.minnehahalofts.app.ContactUsIntegrationSpec" name="validated setupContactUs() method" time="0.011">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.validated setupContactUs() method(ContactUsIntegrationSpec.groovy:9)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.ContactUsIntegrationSpec" name="save and retrieve ContactUs with all associations present" time="0.011">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@4695220b" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@4695220b
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.save and retrieve ContactUs with all associations present(ContactUsIntegrationSpec.groovy:19)
+Caused by: java.lang.IllegalArgumentException: java.lang.ClassCastException@4695220b
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.ContactUsIntegrationSpec" name="update ContactUs with all associations present" time="0.009">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@423682d2" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@423682d2
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.update ContactUs with all associations present(ContactUsIntegrationSpec.groovy:31)
+Caused by: java.lang.IllegalArgumentException: java.lang.ClassCastException@423682d2
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.ContactUsIntegrationSpec" name="delete ContactUs with all associations present" time="0.01">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@1beba91b" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@1beba91b
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.delete ContactUs with all associations present(ContactUsIntegrationSpec.groovy:43)
+Caused by: java.lang.IllegalArgumentException: java.lang.ClassCastException@1beba91b
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.ContactUsIntegrationSpec" name="ensure no cascading on company" time="0.01">
+          <error message="Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@5b7c48f2" type="org.springframework.beans.MethodInvocationException">org.springframework.beans.MethodInvocationException: Property &apos;contactUs&apos; threw exception; nested exception is java.lang.IllegalArgumentException: java.lang.ClassCastException@5b7c48f2
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.setupContactUs(ContactUsIntegrationSpec.groovy:75)
+	at com.minnehahalofts.app.ContactUsIntegrationSpec.ensure no cascading on company(ContactUsIntegrationSpec.groovy:57)
+Caused by: java.lang.IllegalArgumentException: java.lang.ClassCastException@5b7c48f2
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from validated setupContactUs() method--
+--Output from save and retrieve ContactUs with all associations present--
+--Output from update ContactUs with all associations present--
+--Output from delete ContactUs with all associations present--
+--Output from ensure no cascading on company--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from validated setupContactUs() method--
+--Output from save and retrieve ContactUs with all associations present--
+--Output from update ContactUs with all associations present--
+--Output from delete ContactUs with all associations present--
+--Output from ensure no cascading on company--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="3" failures="0" hostname="Margots-Kapacs.local" id="3" name="InquiryIntegrationSpec" package="com.minnehahalofts.app" tests="3" time="0.234" timestamp="2013-06-06T14:59:19">
+      <properties />
+
+      <testcase classname="com.minnehahalofts.app.InquiryIntegrationSpec" name="save and retrieve Inquiry" time="0.102">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+	at com.minnehahalofts.app.InquiryIntegrationSpec.save and retrieve Inquiry(InquiryIntegrationSpec.groovy:10)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.InquiryIntegrationSpec" name="update Inquiry" time="0.04">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+	at com.minnehahalofts.app.InquiryIntegrationSpec.update Inquiry(InquiryIntegrationSpec.groovy:23)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.InquiryIntegrationSpec" name="delete Inquiry with all associations present" time="0.031">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+	at com.minnehahalofts.app.InquiryIntegrationSpec.delete Inquiry with all associations present(InquiryIntegrationSpec.groovy:37)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from save and retrieve Inquiry--
+--Output from update Inquiry--
+--Output from delete Inquiry with all associations present--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from save and retrieve Inquiry--
+--Output from update Inquiry--
+--Output from delete Inquiry with all associations present--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="10" failures="0" hostname="Margots-Kapacs.local" id="4" name="RentalUnitIntegrationSpec" package="com.minnehahalofts.app" tests="11" time="0.37" timestamp="2013-06-06T14:59:19">
+      <properties />
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="test setupRentalUnit helper method" time="0.041">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.setupRentalUnit(RentalUnitIntegrationSpec.groovy:228)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.test setupRentalUnit helper method(RentalUnitIntegrationSpec.groovy:13)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="save and retrieve RentalUnit with all associations present" time="0.042">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.setupRentalUnit(RentalUnitIntegrationSpec.groovy:228)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.save and retrieve RentalUnit with all associations present(RentalUnitIntegrationSpec.groovy:26)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="update RentalUnit with all associations present" time="0.041">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.setupRentalUnit(RentalUnitIntegrationSpec.groovy:228)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.update RentalUnit with all associations present(RentalUnitIntegrationSpec.groovy:37)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="delete RentalUnit with all associations present" time="0.03">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.setupRentalUnit(RentalUnitIntegrationSpec.groovy:228)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.delete RentalUnit with all associations present(RentalUnitIntegrationSpec.groovy:49)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="cascading address ensured with all associations present" time="0.029">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.setupRentalUnit(RentalUnitIntegrationSpec.groovy:228)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.cascading address ensured with all associations present(RentalUnitIntegrationSpec.groovy:68)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="one-to-one relationship between rentalUnit and Address" time="0.024" />
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="cascading review ensured with all associations present" time="0.033">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.setupRentalUnit(RentalUnitIntegrationSpec.groovy:228)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.cascading review ensured with all associations present(RentalUnitIntegrationSpec.groovy:99)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="one-to-many relationship between RentalUnit and Review" time="0.014">
+          <error message="Unable to build valid com.minnehahalofts.app.Address instance, errors: [[&#x9;grails.validation.ValidationErrors: 5 errors&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;]]" type="java.lang.Exception">java.lang.Exception: Unable to build valid com.minnehahalofts.app.Address instance, errors: [[	grails.validation.ValidationErrors: 5 errors
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:241)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure9(BuildTestDataService.groovy:64)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:236)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.one-to-many relationship between RentalUnit and Review(RentalUnitIntegrationSpec.groovy:127)
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="cascading inquiry ensured with all associations present" time="0.031">
+          <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.setupRentalUnit(RentalUnitIntegrationSpec.groovy:228)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.cascading inquiry ensured with all associations present(RentalUnitIntegrationSpec.groovy:154)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.Company
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="one-to-many relationship between RentalUnit and Inquiry" time="0.017">
+          <error message="Unable to build valid com.minnehahalofts.app.Address instance, errors: [[&#x9;grails.validation.ValidationErrors: 5 errors&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;]]" type="java.lang.Exception">java.lang.Exception: Unable to build valid com.minnehahalofts.app.Address instance, errors: [[	grails.validation.ValidationErrors: 5 errors
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:241)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure9(BuildTestDataService.groovy:64)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:236)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.one-to-many relationship between RentalUnit and Inquiry(RentalUnitIntegrationSpec.groovy:182)
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.RentalUnitIntegrationSpec" name="ensure no cascading on Company" time="0.015">
+          <error message="Unable to build valid com.minnehahalofts.app.Address instance, errors: [[&#x9;grails.validation.ValidationErrors: 5 errors&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;]]" type="java.lang.Exception">java.lang.Exception: Unable to build valid com.minnehahalofts.app.Address instance, errors: [[	grails.validation.ValidationErrors: 5 errors
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:241)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure9(BuildTestDataService.groovy:64)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:236)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.RentalUnitIntegrationSpec.ensure no cascading on Company(RentalUnitIntegrationSpec.groovy:207)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from test setupRentalUnit helper method--
+--Output from save and retrieve RentalUnit with all associations present--
+--Output from update RentalUnit with all associations present--
+--Output from delete RentalUnit with all associations present--
+--Output from cascading address ensured with all associations present--
+--Output from one-to-one relationship between rentalUnit and Address--
+--Output from cascading review ensured with all associations present--
+--Output from one-to-many relationship between RentalUnit and Review--
+--Output from cascading inquiry ensured with all associations present--
+--Output from one-to-many relationship between RentalUnit and Inquiry--
+--Output from ensure no cascading on Company--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test setupRentalUnit helper method--
+--Output from save and retrieve RentalUnit with all associations present--
+--Output from update RentalUnit with all associations present--
+--Output from delete RentalUnit with all associations present--
+--Output from cascading address ensured with all associations present--
+--Output from one-to-one relationship between rentalUnit and Address--
+--Output from cascading review ensured with all associations present--
+--Output from one-to-many relationship between RentalUnit and Review--
+--Output from cascading inquiry ensured with all associations present--
+--Output from one-to-many relationship between RentalUnit and Inquiry--
+--Output from ensure no cascading on Company--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="5" failures="0" hostname="Margots-Kapacs.local" id="5" name="ReviewIntegrationSpec" package="com.minnehahalofts.app" tests="5" time="0.075" timestamp="2013-06-06T14:59:19">
+      <properties />
+
+      <testcase classname="com.minnehahalofts.app.ReviewIntegrationSpec" name="save and retrieve Review with all associations present" time="0.014">
+          <error message="Invalid property &apos;imgUrl&apos; of bean class [com.minnehahalofts.app.Review]: Getter for property &apos;imgUrl&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException" type="org.springframework.beans.InvalidPropertyException">org.springframework.beans.InvalidPropertyException: Invalid property &apos;imgUrl&apos; of bean class [com.minnehahalofts.app.Review]: Getter for property &apos;imgUrl&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:240)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.ReviewIntegrationSpec.save and retrieve Review with all associations present(ReviewIntegrationSpec.groovy:10)
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.NullPointerException
+	at java.lang.String.contains(String.java:2076)
+	at com.minnehahalofts.app.Review.getImgUrl(Review.groovy:54)
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.ReviewIntegrationSpec" name="update Review with all associations present" time="0.014">
+          <error message="Invalid property &apos;imgUrl&apos; of bean class [com.minnehahalofts.app.Review]: Getter for property &apos;imgUrl&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException" type="org.springframework.beans.InvalidPropertyException">org.springframework.beans.InvalidPropertyException: Invalid property &apos;imgUrl&apos; of bean class [com.minnehahalofts.app.Review]: Getter for property &apos;imgUrl&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:240)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.ReviewIntegrationSpec.update Review with all associations present(ReviewIntegrationSpec.groovy:23)
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.NullPointerException
+	at java.lang.String.contains(String.java:2076)
+	at com.minnehahalofts.app.Review.getImgUrl(Review.groovy:54)
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.ReviewIntegrationSpec" name="delete Review with all associations present" time="0.017">
+          <error message="Invalid property &apos;imgUrl&apos; of bean class [com.minnehahalofts.app.Review]: Getter for property &apos;imgUrl&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException" type="org.springframework.beans.InvalidPropertyException">org.springframework.beans.InvalidPropertyException: Invalid property &apos;imgUrl&apos; of bean class [com.minnehahalofts.app.Review]: Getter for property &apos;imgUrl&apos; threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:240)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ReviewIntegrationSpec.delete Review with all associations present(ReviewIntegrationSpec.groovy:37)
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.NullPointerException
+	at java.lang.String.contains(String.java:2076)
+	at com.minnehahalofts.app.Review.getImgUrl(Review.groovy:54)
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.ReviewIntegrationSpec" name="one-to-many from Review to RentalUnit ensured" time="0.015">
+          <error message="Unable to build valid com.minnehahalofts.app.Address instance, errors: [[&#x9;grails.validation.ValidationErrors: 5 errors&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;]]" type="java.lang.Exception">java.lang.Exception: Unable to build valid com.minnehahalofts.app.Address instance, errors: [[	grails.validation.ValidationErrors: 5 errors
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:241)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure9(BuildTestDataService.groovy:64)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:236)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.ReviewIntegrationSpec.one-to-many from Review to RentalUnit ensured(ReviewIntegrationSpec.groovy:62)
+</error>
+
+      </testcase>
+
+      <testcase classname="com.minnehahalofts.app.ReviewIntegrationSpec" name="getImgUrl method overloaded test" time="0.01">
+          <error message="Unable to build valid com.minnehahalofts.app.Address instance, errors: [[&#x9;grails.validation.ValidationErrors: 5 errors&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]&#xa;]]" type="java.lang.Exception">java.lang.Exception: Unable to build valid com.minnehahalofts.app.Address instance, errors: [[	grails.validation.ValidationErrors: 5 errors
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;street&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.street.nullable.error.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.error.street,com.minnehahalofts.app.Address.street.nullable.error.java.lang.String,com.minnehahalofts.app.Address.street.nullable.error,address.street.nullable.error.com.minnehahalofts.app.Address.street,address.street.nullable.error.street,address.street.nullable.error.java.lang.String,address.street.nullable.error,com.minnehahalofts.app.Address.street.nullable.com.minnehahalofts.app.Address.street,com.minnehahalofts.app.Address.street.nullable.street,com.minnehahalofts.app.Address.street.nullable.java.lang.String,com.minnehahalofts.app.Address.street.nullable,address.street.nullable.com.minnehahalofts.app.Address.street,address.street.nullable.street,address.street.nullable.java.lang.String,address.street.nullable,nullable.com.minnehahalofts.app.Address.street,nullable.street,nullable.java.lang.String,nullable]; arguments [street,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;city&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.city.nullable.error.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.error.city,com.minnehahalofts.app.Address.city.nullable.error.java.lang.String,com.minnehahalofts.app.Address.city.nullable.error,address.city.nullable.error.com.minnehahalofts.app.Address.city,address.city.nullable.error.city,address.city.nullable.error.java.lang.String,address.city.nullable.error,com.minnehahalofts.app.Address.city.nullable.com.minnehahalofts.app.Address.city,com.minnehahalofts.app.Address.city.nullable.city,com.minnehahalofts.app.Address.city.nullable.java.lang.String,com.minnehahalofts.app.Address.city.nullable,address.city.nullable.com.minnehahalofts.app.Address.city,address.city.nullable.city,address.city.nullable.java.lang.String,address.city.nullable,nullable.com.minnehahalofts.app.Address.city,nullable.city,nullable.java.lang.String,nullable]; arguments [city,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;state&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.state.nullable.error.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.error.state,com.minnehahalofts.app.Address.state.nullable.error.java.lang.String,com.minnehahalofts.app.Address.state.nullable.error,address.state.nullable.error.com.minnehahalofts.app.Address.state,address.state.nullable.error.state,address.state.nullable.error.java.lang.String,address.state.nullable.error,com.minnehahalofts.app.Address.state.nullable.com.minnehahalofts.app.Address.state,com.minnehahalofts.app.Address.state.nullable.state,com.minnehahalofts.app.Address.state.nullable.java.lang.String,com.minnehahalofts.app.Address.state.nullable,address.state.nullable.com.minnehahalofts.app.Address.state,address.state.nullable.state,address.state.nullable.java.lang.String,address.state.nullable,nullable.com.minnehahalofts.app.Address.state,nullable.state,nullable.java.lang.String,nullable]; arguments [state,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;country&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.country.nullable.error.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.error.country,com.minnehahalofts.app.Address.country.nullable.error.java.lang.String,com.minnehahalofts.app.Address.country.nullable.error,address.country.nullable.error.com.minnehahalofts.app.Address.country,address.country.nullable.error.country,address.country.nullable.error.java.lang.String,address.country.nullable.error,com.minnehahalofts.app.Address.country.nullable.com.minnehahalofts.app.Address.country,com.minnehahalofts.app.Address.country.nullable.country,com.minnehahalofts.app.Address.country.nullable.java.lang.String,com.minnehahalofts.app.Address.country.nullable,address.country.nullable.com.minnehahalofts.app.Address.country,address.country.nullable.country,address.country.nullable.java.lang.String,address.country.nullable,nullable.com.minnehahalofts.app.Address.country,nullable.country,nullable.java.lang.String,nullable]; arguments [country,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+Field error in object &apos;com.minnehahalofts.app.Address&apos; on field &apos;zip&apos;: rejected value [null]; codes [com.minnehahalofts.app.Address.zip.nullable.error.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.error.zip,com.minnehahalofts.app.Address.zip.nullable.error.java.lang.String,com.minnehahalofts.app.Address.zip.nullable.error,address.zip.nullable.error.com.minnehahalofts.app.Address.zip,address.zip.nullable.error.zip,address.zip.nullable.error.java.lang.String,address.zip.nullable.error,com.minnehahalofts.app.Address.zip.nullable.com.minnehahalofts.app.Address.zip,com.minnehahalofts.app.Address.zip.nullable.zip,com.minnehahalofts.app.Address.zip.nullable.java.lang.String,com.minnehahalofts.app.Address.zip.nullable,address.zip.nullable.com.minnehahalofts.app.Address.zip,address.zip.nullable.zip,address.zip.nullable.java.lang.String,address.zip.nullable,nullable.com.minnehahalofts.app.Address.zip,nullable.zip,nullable.java.lang.String,nullable]; arguments [zip,class com.minnehahalofts.app.Address]; default message [Property [{0}] of class [{1}] cannot be null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:241)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure9(BuildTestDataService.groovy:64)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:236)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.ReviewIntegrationSpec.getImgUrl method overloaded test(ReviewIntegrationSpec.groovy:83)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from save and retrieve Review with all associations present--
+--Output from update Review with all associations present--
+--Output from delete Review with all associations present--
+--Output from one-to-many from Review to RentalUnit ensured--
+--Output from getImgUrl method overloaded test--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from save and retrieve Review with all associations present--
+--Output from update Review with all associations present--
+--Output from delete Review with all associations present--
+--Output from one-to-many from Review to RentalUnit ensured--
+--Output from getImgUrl method overloaded test--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

@@ -1,0 +1,11 @@
+--Output from test setupRentalUnit helper method--
+--Output from save and retrieve RentalUnit with all associations present--
+--Output from update RentalUnit with all associations present--
+--Output from delete RentalUnit with all associations present--
+--Output from cascading address ensured with all associations present--
+--Output from one-to-one relationship between rentalUnit and Address--
+--Output from cascading review ensured with all associations present--
+--Output from one-to-many relationship between RentalUnit and Review--
+--Output from cascading inquiry ensured with all associations present--
+--Output from one-to-many relationship between RentalUnit and Inquiry--
+--Output from ensure no cascading on Company--

@@ -1,0 +1,3 @@
+--Output from save and retrieve Inquiry--
+--Output from update Inquiry--
+--Output from delete Inquiry with all associations present--

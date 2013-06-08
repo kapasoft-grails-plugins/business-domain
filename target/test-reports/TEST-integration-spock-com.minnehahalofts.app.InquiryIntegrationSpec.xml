@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="3" failures="0" hostname="Margots-Kapacs.local" name="com.minnehahalofts.app.InquiryIntegrationSpec" tests="3" time="0.234" timestamp="2013-06-06T14:59:19">
+  <properties />
+  <testcase classname="com.minnehahalofts.app.InquiryIntegrationSpec" name="save and retrieve Inquiry" time="0.102">
+    <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+	at com.minnehahalofts.app.InquiryIntegrationSpec.save and retrieve Inquiry(InquiryIntegrationSpec.groovy:10)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+</error>
+  </testcase>
+  <testcase classname="com.minnehahalofts.app.InquiryIntegrationSpec" name="update Inquiry" time="0.04">
+    <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+	at com.minnehahalofts.app.InquiryIntegrationSpec.update Inquiry(InquiryIntegrationSpec.groovy:23)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+</error>
+  </testcase>
+  <testcase classname="com.minnehahalofts.app.InquiryIntegrationSpec" name="delete Inquiry with all associations present" time="0.031">
+    <error message="object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+	at com.minnehahalofts.app.InquiryIntegrationSpec.delete Inquiry with all associations present(InquiryIntegrationSpec.groovy:37)
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: com.minnehahalofts.app.RentalUnit
+</error>
+  </testcase>
+  <system-out><![CDATA[--Output from save and retrieve Inquiry--
+--Output from update Inquiry--
+--Output from delete Inquiry with all associations present--
+]]></system-out>
+  <system-err><![CDATA[--Output from save and retrieve Inquiry--
+--Output from update Inquiry--
+--Output from delete Inquiry with all associations present--
+]]></system-err>
+</testsuite>

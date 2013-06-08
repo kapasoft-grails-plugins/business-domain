@@ -1,0 +1,15 @@
+--Output from test setupCompany helper method--
+--Output from save and retrieve RentalUnit with all associations present--
+--Output from update Company with all associations present--
+--Output from delete Company with all associations present--
+--Output from cascading address ensured with all associations present--
+--Output from one-to-one relationship between Company and Address--
+--Output from non-cascading featuredReview ensured with all associations present--
+--Output from non-cascading orphan reviews--
+--Output from one-to-many unidirectional relationship between Company and Review--
+--Output from ensure no-cascading on rental unit--
+--Output from ensure no-cascading on orphan rental unit--
+--Output from one-to-many bidirectional relationship between company and rental unit ensured--
+--Output from ensure cascading on Connection--
+--Output from ensure cascading on orphan ContactUs--
+--Output from one-to-many bidirectional relationship between rental unit and ContactUs ensured--

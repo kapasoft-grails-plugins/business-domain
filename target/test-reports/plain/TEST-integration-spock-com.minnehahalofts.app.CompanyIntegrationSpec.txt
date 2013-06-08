@@ -1,0 +1,222 @@
+Testsuite: com.minnehahalofts.app.CompanyIntegrationSpec
+Tests run: 15, Failures: 0, Errors: 14, Time elapsed: 0.44 sec
+------------- Standard Output ---------------
+--Output from test setupCompany helper method--
+--Output from save and retrieve RentalUnit with all associations present--
+--Output from update Company with all associations present--
+--Output from delete Company with all associations present--
+--Output from cascading address ensured with all associations present--
+--Output from one-to-one relationship between Company and Address--
+--Output from non-cascading featuredReview ensured with all associations present--
+--Output from non-cascading orphan reviews--
+--Output from one-to-many unidirectional relationship between Company and Review--
+--Output from ensure no-cascading on rental unit--
+--Output from ensure no-cascading on orphan rental unit--
+--Output from one-to-many bidirectional relationship between company and rental unit ensured--
+--Output from ensure cascading on Connection--
+--Output from ensure cascading on orphan ContactUs--
+--Output from one-to-many bidirectional relationship between rental unit and ContactUs ensured--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test setupCompany helper method--
+--Output from save and retrieve RentalUnit with all associations present--
+--Output from update Company with all associations present--
+--Output from delete Company with all associations present--
+--Output from cascading address ensured with all associations present--
+--Output from one-to-one relationship between Company and Address--
+--Output from non-cascading featuredReview ensured with all associations present--
+--Output from non-cascading orphan reviews--
+--Output from one-to-many unidirectional relationship between Company and Review--
+--Output from ensure no-cascading on rental unit--
+--Output from ensure no-cascading on orphan rental unit--
+--Output from one-to-many bidirectional relationship between company and rental unit ensured--
+--Output from ensure cascading on Connection--
+--Output from ensure cascading on orphan ContactUs--
+--Output from one-to-many bidirectional relationship between rental unit and ContactUs ensured--
+------------- ---------------- ---------------
+
+Testcase: test setupCompany helper method took 0.028 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.test setupCompany helper method(CompanyIntegrationSpec.groovy:10)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: save and retrieve RentalUnit with all associations present took 0.025 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.save and retrieve RentalUnit with all associations present(CompanyIntegrationSpec.groovy:27)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: update Company with all associations present took 0.025 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.update Company with all associations present(CompanyIntegrationSpec.groovy:39)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: delete Company with all associations present took 0.034 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.delete Company with all associations present(CompanyIntegrationSpec.groovy:51)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: cascading address ensured with all associations present took 0.036 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.cascading address ensured with all associations present(CompanyIntegrationSpec.groovy:72)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: one-to-one relationship between Company and Address took 0.018 sec
+Testcase: non-cascading featuredReview ensured with all associations present took 0.026 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.non-cascading featuredReview ensured with all associations present(CompanyIntegrationSpec.groovy:101)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: non-cascading orphan reviews took 0.024 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.non-cascading orphan reviews(CompanyIntegrationSpec.groovy:121)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: one-to-many unidirectional relationship between Company and Review took 0.019 sec
+	Caused an ERROR
+Invalid property 'imgUrl' of bean class [com.minnehahalofts.app.Review]: Getter for property 'imgUrl' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+org.springframework.beans.InvalidPropertyException: Invalid property 'imgUrl' of bean class [com.minnehahalofts.app.Review]: Getter for property 'imgUrl' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:240)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:230)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure1(BuildTestDataService.groovy:25)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.one-to-many unidirectional relationship between Company and Review(CompanyIntegrationSpec.groovy:138)
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.NullPointerException
+	at java.lang.String.contains(String.java:2076)
+	at com.minnehahalofts.app.Review.getImgUrl(Review.groovy:54)
+
+Testcase: ensure no-cascading on rental unit took 0.023 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.ensure no-cascading on rental unit(CompanyIntegrationSpec.groovy:165)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: ensure no-cascading on orphan rental unit took 0.028 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.ensure no-cascading on orphan rental unit(CompanyIntegrationSpec.groovy:179)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: one-to-many bidirectional relationship between company and rental unit ensured took 0.021 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.one-to-many bidirectional relationship between company and rental unit ensured(CompanyIntegrationSpec.groovy:192)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: ensure cascading on Connection took 0.025 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.ensure cascading on Connection(CompanyIntegrationSpec.groovy:215)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: ensure cascading on orphan ContactUs took 0.024 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.ensure cascading on orphan ContactUs(CompanyIntegrationSpec.groovy:229)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
+Testcase: one-to-many bidirectional relationship between rental unit and ContactUs ensured took 0.022 sec
+	Caused an ERROR
+Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+org.springframework.beans.MethodInvocationException: Property 'contactUs' threw exception; nested exception is java.lang.IllegalArgumentException: argument type mismatch
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:134)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:133)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:46)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.setupCompany(CompanyIntegrationSpec.groovy:276)
+	at com.minnehahalofts.app.CompanyIntegrationSpec.one-to-many bidirectional relationship between rental unit and ContactUs ensured(CompanyIntegrationSpec.groovy:243)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+
